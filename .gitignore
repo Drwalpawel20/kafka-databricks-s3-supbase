@@ -1,0 +1,20 @@
+# Sekrety
+.env
+
+# Dane i logi generowane lokalnie
+data/*
+!data/.gitkeep
+send_to_s3/
+logs/
+airflow/logs/
+config/airflow.cfg
+*.parquet
+*.sqlite
+
+# Python
+__pycache__/
+.pytest_cache/
+.venv/
+
+# Pliki Windows (Zone.Identifier po pobraniu z internetu)
+*.Zone.Identifier

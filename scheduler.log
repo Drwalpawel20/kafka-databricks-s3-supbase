@@ -1,0 +1,80 @@
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:04:45.540934Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:04:55.381699Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:05:04.675678Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:05:13.974101Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:05:24.072425Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:05:34.322832Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:05:46.550978Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:06:02.049124Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:06:23.007265Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:06:57.152791Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:07:56.993415Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:09:05.104035Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:10:13.834047Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997
+airflow-scheduler-1  | 
+airflow-scheduler-1  | BACKEND=redis
+airflow-scheduler-1  | DB_HOST=redis
+airflow-scheduler-1  | DB_PORT=6379
+airflow-scheduler-1  | 
+airflow-scheduler-1  | 2026-11-07T17:11:22.928718Z [error    ] Database migration required. Please run `airflow db migrate`. Make sure the command is run using Airflow version 3.3.2. [airflow.utils.db] loc=db.py:997

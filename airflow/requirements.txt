@@ -1,0 +1,5 @@
+apache-airflow-providers-databricks
+supabase
+boto3
+pandas
+pyarrow

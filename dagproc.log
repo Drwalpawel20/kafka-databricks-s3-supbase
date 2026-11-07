@@ -1,0 +1,60 @@
+airflow-dag-processor-1  | Traceback (most recent call last):
+airflow-dag-processor-1  |   File "/home/airflow/.local/bin/airflow", line 6, in <module>
+airflow-dag-processor-1  |     sys.exit(main())
+airflow-dag-processor-1  |              ~~~~^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/__main__.py", line 61, in main
+airflow-dag-processor-1  |     args.func(args)
+airflow-dag-processor-1  |     ~~~~~~~~~^^^^^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/cli/cli_config.py", line 49, in command
+airflow-dag-processor-1  |     return func(*args, **kwargs)
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/utils/cli.py", line 113, in wrapper
+airflow-dag-processor-1  |     return f(*args, **kwargs)
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/utils/providers_configuration_loader.py", line 54, in wrapped_function
+airflow-dag-processor-1  |     return func(*args, **kwargs)
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/cli/commands/dag_processor_command.py", line 70, in dag_processor
+airflow-dag-processor-1  |     run_command_with_daemon_option(
+airflow-dag-processor-1  |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+airflow-dag-processor-1  |         args=args,
+airflow-dag-processor-1  |         ^^^^^^^^^^
+airflow-dag-processor-1  |     ...<2 lines>...
+airflow-dag-processor-1  |         should_setup_logging=True,
+airflow-dag-processor-1  |         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+airflow-dag-processor-1  |     )
+airflow-dag-processor-1  |     ^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/cli/commands/daemon_utils.py", line 82, in run_command_with_daemon_option
+airflow-dag-processor-1  |     callback()
+airflow-dag-processor-1  |     ~~~~~~~~^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/cli/commands/dag_processor_command.py", line 73, in <lambda>
+airflow-dag-processor-1  |     callback=lambda: _run_dag_processor_job(job_runner),
+airflow-dag-processor-1  |                      ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/utils/memray_utils.py", line 61, in wrapper
+airflow-dag-processor-1  |     return func(*args, **kwargs)
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/cli/commands/dag_processor_command.py", line 51, in _run_dag_processor_job
+airflow-dag-processor-1  |     run_job(job=job_runner.job, execute_callable=job_runner._execute)
+airflow-dag-processor-1  |     ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/utils/session.py", line 100, in wrapper
+airflow-dag-processor-1  |     return func(*args, session=session, **kwargs)  # type: ignore[arg-type]
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/jobs/job.py", line 353, in run_job
+airflow-dag-processor-1  |     return execute_job(job, execute_callable=execute_callable)
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/jobs/job.py", line 382, in execute_job
+airflow-dag-processor-1  |     ret = execute_callable()
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/jobs/dag_processor_job_runner.py", line 61, in _execute
+airflow-dag-processor-1  |     self.processor.run()
+airflow-dag-processor-1  |     ~~~~~~~~~~~~~~~~~~^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/dag_processing/manager.py", line 364, in run
+airflow-dag-processor-1  |     return self._run_parsing_loop()
+airflow-dag-processor-1  |            ~~~~~~~~~~~~~~~~~~~~~~^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/dag_processing/manager.py", line 585, in _run_parsing_loop
+airflow-dag-processor-1  |     self._start_new_processes()
+airflow-dag-processor-1  |     ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/dag_processing/manager.py", line 1457, in _start_new_processes
+airflow-dag-processor-1  |     processor = self._create_process(file)
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/dag_processing/manager.py", line 1431, in _create_process
+airflow-dag-processor-1  |     logger, logger_filehandle = self._get_logger_for_dag_file(dag_file)
+airflow-dag-processor-1  |                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+airflow-dag-processor-1  |   File "/home/airflow/.local/lib/python3.13/site-packages/airflow/dag_processing/manager.py", line 1411, in _get_logger_for_dag_file
+airflow-dag-processor-1  |     logger_filehandle = log_file.open("ab")
+airflow-dag-processor-1  |   File "/usr/python/lib/python3.13/pathlib/_local.py", line 537, in open
+airflow-dag-processor-1  |     return io.open(self, mode, buffering, encoding, errors, newline)
+airflow-dag-processor-1  |            ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+airflow-dag-processor-1  | FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/logs/dag_processor/2026-11-07/dags-folder/ecommerce_pipeline.py.log'
