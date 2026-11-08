@@ -41,7 +41,7 @@ def run() -> None:
         cfg["kafka_topic"],
         bootstrap_servers=cfg["kafka_bootstrap"],
         group_id=cfg["consumer_group"],
-        enable_auto_commit=False,      # offset commitujemy dopiero po zapisie
+        enable_auto_commit=False,     
         auto_offset_reset="earliest",
         value_deserializer=lambda b: json.loads(b.decode("utf-8")),
     )
@@ -49,7 +49,7 @@ def run() -> None:
     bronze_dir = Path(cfg["bronze_dir"]) / "orders"
 
     buffer: list[dict] = []
-    seen: set[str] = set()  # duplikaty wewnątrz tej samej partii
+    seen: set[str] = set()  
     last_flush = time.monotonic()
     log.info("Konsument uruchomiony, topic=%s", cfg["kafka_topic"])
 
@@ -68,8 +68,8 @@ def run() -> None:
             time_due = time.monotonic() - last_flush >= FLUSH_SECONDS
             if buffer and (len(buffer) >= BATCH_SIZE or time_due):
                 path = write_batch(buffer, bronze_dir)
-                store.mark_processed(list(seen))  # najpierw zapis, potem oznaczenie
-                consumer.commit()                 # i dopiero na końcu commit offsetów
+                store.mark_processed(list(seen))  
+                consumer.commit()                 
                 log.info("Zapisano %d rekordów -> %s", len(buffer), path)
                 buffer, seen = [], set()
                 last_flush = time.monotonic()
